@@ -65,7 +65,7 @@ export default {
     locales: [
       { code: 'vi', iso: 'vi-VN', file: 'vn.js', name: 'Tiếng Việt' },
       { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
-      { code: 'ja', iso: 'ja-JP', file: 'jp.js', name: 'Japanese' },
+      { code: 'ja', iso: 'ja-JP', file: 'jp.js', name: '日本語' },
     ],
     strategy: 'no_prefix',
     detectBrowserLanguage: false,
