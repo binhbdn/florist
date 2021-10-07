@@ -49,6 +49,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://i18n.nuxtjs.org
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -56,6 +58,22 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // i18n module configuration: https://i18n.nuxtjs.org/options-reference
+  i18n: {
+    langDir: '~/locales/',
+    locales: [
+      { code: 'vi', iso: 'vi-VN', file: 'vn.js', name: 'Tiếng Việt' },
+      { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
+      { code: 'ja', iso: 'ja-JP', file: 'jp.js', name: 'Japanese' },
+    ],
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false,
+    defaultLocale: 'vi',
+    vueI18n: {
+      fallbackLocale: [ 'en', 'vi' ],
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
