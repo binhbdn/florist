@@ -39,6 +39,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // https://github.com/Developmint/nuxt-purgecss#readme
+    'nuxt-purgecss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
