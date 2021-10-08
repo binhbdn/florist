@@ -26,6 +26,10 @@ export default {
   css: [
   ],
 
+  router: {
+    base: process.env.NODE_ENV === 'dev' ? '/' : '/florist/',
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
