@@ -45,7 +45,7 @@
     "fibers": "^5.0.0",
     "husky": "^7.0.2",
     "jest": "^27.0.5",
-    "lint-staged": "^11.2.0",
+    "lint-staged": "^11.2.3",
     "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.3.2",
     "sass": "^1.42.1",
