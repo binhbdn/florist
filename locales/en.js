@@ -1,4 +1,8 @@
 export default {
+  "meta": {
+    "description": "Amazing freshness flower shop",
+  },
+
   "nav": {
     "home": "Home",
     "about": "About",

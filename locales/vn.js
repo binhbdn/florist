@@ -1,4 +1,8 @@
 export default {
+  "meta": {
+    "description": "Cửa hàng hoa tươi tuyệt vời",
+  },
+
   "nav": {
     "home": "Trang chủ",
     "about": "Giới thiệu",

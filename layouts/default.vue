@@ -22,6 +22,14 @@ export default {
           body: true,
         },
       ],
+
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('meta.description'),
+        },
+      ],
     }
   },
 }
