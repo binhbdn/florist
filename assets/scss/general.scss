@@ -147,7 +147,11 @@ ol {
 
 /* --- Header --- */
 .navbar {
-  background: #fff;
+  background-color: #eaeaea;
+
+  .dropdown-menu {
+    background-color: #eaeaea;
+  }
 
   .dropdown {
     @media all and (min-width: 992px) {
@@ -184,6 +188,8 @@ ol {
 
   .navbar-collapse {
     .nav-item {
+      text-transform: uppercase;
+
       &.nav-item--logo {
         img {
           width: 116px;
@@ -200,6 +206,9 @@ ol {
       }
     }
 
+    .dropdown-item {
+      text-transform: none;
+    }
   }
 
   .container {
