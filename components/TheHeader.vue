@@ -13,30 +13,30 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <NuxtLink class="navbar-brand mx-auto d-none" to="/">
+        <NuxtLink class="navbar-brand mx-auto d-none" :to="localePath('/')">
           <FloristLogo class="mx-auto" />
         </NuxtLink>
         <div class="navbar-icons d-flex pt-2">
           <NuxtLink
-            to="/san-pham/tim-kiem"
+            :to="localePath('/tim-kiem')"
             class="nav-link px-2"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="Tìm kiếm sản phẩm"
+            :title="$t('nav.searchProduct')"
           >
             <IconSearch size="20" />
           </NuxtLink>
           <NuxtLink
-            to="/san-pham/yeu-thich"
+            :to="localePath('/san-pham-yeu-thich')"
             class="nav-link px-2"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="Sản phẩm yêu thích"
+            :title="$t('nav.wishList')"
           >
             <div class="position-relative">
               <IconHeart size="20" />
               <span
-                v-if="$root.$data.favoriteProductsCount > 0"
+                v-if="$store.state.favoriteProductsCount > 0"
                 class="
                   position-absolute
                   top-0
@@ -47,21 +47,21 @@
                   bg-danger
                 "
               >
-                {{ $root.$data.favoriteProductsCount }}
+                {{ $store.state.favoriteProductsCount }}
               </span>
             </div>
           </NuxtLink>
           <NuxtLink
-            to="/san-pham/gio-hang"
+            :to="localePath('/gio-hang')"
             class="nav-link px-2"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="Sản phẩm đã chọn"
+            :title="$t('nav.cart')"
           >
             <div class="position-relative">
               <IconCart size="20" />
               <span
-                v-if="$root.$data.selectedProductsCount > 0"
+                v-if="$store.state.selectedProductsCount > 0"
                 class="
                   position-absolute
                   top-0
@@ -72,7 +72,7 @@
                   bg-danger
                 "
               >
-                {{ $root.$data.selectedProductsCount }}
+                {{ $store.state.selectedProductsCount }}
               </span>
             </div>
           </NuxtLink>
@@ -85,13 +85,9 @@
               data-bs-auto-close="true"
               aria-expanded="false"
               role="button"
-              title="Tài khoản"
+              :title="$t('nav.account')"
             >
-              <IconSignIn
-                v-if="isLoggedIn"
-                class="rounded-circle"
-                size="20"
-              />
+              <IconSignIn v-if="isLoggedIn" class="rounded-circle" size="20" />
               <IconSignOut v-else class="rounded-circle" size="20" />
             </span>
             <ul
@@ -100,29 +96,30 @@
             >
               <li class="nav-item">
                 <NuxtLink
-                  to="/dang-ky"
+                  :to="localePath('/dang-ky')"
                   :class="{ disabled: isLoggedIn }"
                   class="dropdown-item"
                 >
-                  Đăng ký
+                  {{ $t('nav.register') }}
                 </NuxtLink>
               </li>
               <li class="nav-item">
                 <NuxtLink
-                  to="/dang-nhap"
+                  :to="localePath('/dang-nhap')"
                   :class="{ disabled: isLoggedIn }"
                   class="dropdown-item"
                 >
-                  Đăng nhập
+                  {{ $t('nav.signIn') }}
                 </NuxtLink>
               </li>
               <li class="nav-item">
                 <span
                   :class="{ disabled: !isLoggedIn }"
                   class="dropdown-item"
+                  role="button"
                   @click="isLoggedIn = false"
                 >
-                  Đăng xuất
+                  {{ $t('nav.signOut') }}
                 </span>
               </li>
               <li><hr class="dropdown-divider" /></li>
@@ -132,7 +129,46 @@
                   :class="{ disabled: !isLoggedIn }"
                   class="dropdown-item"
                 >
-                  Bảng điều khiển
+                  {{ $t('nav.dashboard') }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown text-end">
+            <span
+              id="dropdownLang"
+              class="nav-link dropdown-toggle d-block"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="true"
+              aria-expanded="false"
+              role="button"
+              :title="$i18n.localeProperties.name"
+            >
+              <img
+                :src="require(`~/assets/img/flags/${$i18n.locale}.svg`)"
+                height="20"
+                alt="current locale"
+              />
+            </span>
+            <ul
+              class="dropdown-menu dropdown-menu-end text-small"
+              aria-labelledby="dropdownLang"
+            >
+              <li
+                v-for="locale in otherLocalesList"
+                :key="locale.code"
+                class="nav-item"
+              >
+                <NuxtLink
+                  :to="switchLocalePath(locale.code)"
+                  class="dropdown-item"
+                >
+                  <img
+                    :src="require(`~/assets/img/flags/${locale.code}.svg`)"
+                    height="20"
+                    :alt="`change to ${locale.code} locale`"
+                  />
+                  {{ locale.name }}
                 </NuxtLink>
               </li>
             </ul>
@@ -141,83 +177,97 @@
         <div id="navbarToggler" class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item nav-item--logo pt-3">
-              <NuxtLink to="/"> <FloristLogo /> </NuxtLink>
+              <NuxtLink :to="localePath('/')"> <FloristLogo /> </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/" class="nav-link"> TRANG CHỦ </NuxtLink>
+              <NuxtLink :to="localePath('/')" class="nav-link">
+                {{ $t('nav.home') }}
+              </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/gioi-thieu" class="nav-link"
-                >GIỚI THIỆU</NuxtLink
-              >
+              <NuxtLink :to="localePath('/gioi-thieu')" class="nav-link">
+                {{ $t('nav.about') }}
+              </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/dich-vu" class="nav-link">DỊCH VỤ</NuxtLink>
+              <NuxtLink :to="localePath('/dich-vu')" class="nav-link">
+                {{ $t('nav.service') }}
+              </NuxtLink>
             </li>
             <li class="nav-item dropdown">
               <span
                 id="dropdown01"
                 :class="{
-                  'NuxtLink-exact-active': $route.path == '/san-pham',
+                  'nuxt-link-exact-active':
+                    $route.path == localePath('/san-pham'),
                 }"
                 class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 role="button"
-                @click="showAllProducts"
+                @click="showAllProductsOnDesktop"
               >
-                SẢN PHẨM
+                {{ $t('nav.product') }}
               </span>
-
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="dropdown01"
-              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
                 <li class="d-block d-lg-none">
-                  <NuxtLink to="/san-pham" class="dropdown-item"
-                    >Tất cả sản phẩm</NuxtLink
-                  >
+                  <NuxtLink :to="localePath('/san-pham')" class="dropdown-item">
+                    {{ $t('nav.showAllProducts') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/san-pham/dat-hang" class="dropdown-item"
-                    >Đặt hàng sản phẩm</NuxtLink
-                  >
+                  <NuxtLink :to="localePath('/dat-hang')" class="dropdown-item">
+                    {{ $t('nav.orderProducts') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/san-pham/gio-hang" class="dropdown-item"
-                    >Sản phẩm đã chọn</NuxtLink
-                  >
+                  <NuxtLink :to="localePath('/gio-hang')" class="dropdown-item">
+                    {{ $t('nav.cart') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/san-pham/thanh-toan" class="dropdown-item"
-                    >Thanh toán</NuxtLink
+                  <NuxtLink
+                    :to="localePath('/thanh-toan')"
+                    class="dropdown-item"
                   >
+                    {{ $t('nav.checkout') }}
+                  </NuxtLink>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <NuxtLink to="/san-pham/yeu-thich" class="dropdown-item"
-                    >Sản phẩm yêu thích</NuxtLink
+                  <NuxtLink
+                    :to="localePath('/san-pham-yeu-thich')"
+                    class="dropdown-item"
                   >
+                    {{ $t('nav.wishList') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/san-pham/tim-kiem" class="dropdown-item"
-                    >Tìm kiếm sản phẩm</NuxtLink
-                  >
+                  <NuxtLink :to="localePath('/tim-kiem')" class="dropdown-item">
+                    {{ $t('nav.searchProduct') }}
+                  </NuxtLink>
                 </li>
 
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <NuxtLink to="/san-pham/deco" class="dropdown-item"
-                    >Góc deco sản phẩm</NuxtLink
+                  <NuxtLink
+                    :to="localePath('/san-pham-deco')"
+                    class="dropdown-item"
                   >
+                    {{ $t('nav.productDecoCorner') }}
+                  </NuxtLink>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/blog" class="nav-link">BLOG</NuxtLink>
+              <NuxtLink :to="localePath('/blog')" class="nav-link">
+                {{ $t('nav.blog') }}
+              </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink to="/lien-he" class="nav-link">LIÊN HỆ</NuxtLink>
+              <NuxtLink :to="localePath('/lien-he')" class="nav-link">
+                {{ $t('nav.contact') }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -228,5 +278,27 @@
 
 <script>
 export default {
-};
+  computed: {
+    isLoggedIn: {
+      get() {
+        return this.$store.state.isSignedIn
+      },
+      set(value) {
+        this.$store.commit('updateSignInStatus', value)
+      },
+    },
+
+    otherLocalesList() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
+
+  methods: {
+    showAllProductsOnDesktop() {
+      if (window.innerWidth > 992) {
+        this.$router.push(this.localePath('/san-pham'))
+      }
+    },
+  },
+}
 </script>
