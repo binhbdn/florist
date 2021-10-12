@@ -72,6 +72,7 @@ export default {
 
   // i18n module configuration: https://i18n.nuxtjs.org/options-reference
   i18n: {
+    lazy: true,
     langDir: '~/locales/',
     locales: [
       { code: 'vi', iso: 'vi-VN', file: 'vn.js', name: 'Tiếng Việt' },
