@@ -78,7 +78,7 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
       { code: 'ja', iso: 'ja-JP', file: 'jp.js', name: '日本語' },
     ],
-    strategy: 'no_prefix',
+    // strategy: 'no_prefix',
     detectBrowserLanguage: false,
     defaultLocale: 'vi',
     vueI18n: {
