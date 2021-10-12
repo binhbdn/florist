@@ -1,4 +1,8 @@
 export default {
+  "meta": {
+    "description": "素晴らしい鮮度フラワーショップ",
+  },
+
   "nav": {
     "home": "ホーム",
     "about": "会社概要",
