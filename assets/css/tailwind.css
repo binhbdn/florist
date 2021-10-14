@@ -12,3 +12,29 @@
     }
   }
 }
+
+@layer components {
+  .btn-florist {
+    @apply tw-inline-block tw-pt-3.5 tw-pb-3 tw-px-7.5 tw-text-white tw-font-bold tw-text-15px tw-tracking-2px tw-uppercase tw-bg-pink-500 tw-rounded-full box-shadow-florist hover:box-shadow-inset-florist;
+
+    &.btn-outline-florist {
+      @apply tw-pt-3 tw-pb-2.5 tw-text-gray-900 tw-bg-transparent tw-border-pink-500 tw-border-solid tw-border-2;
+    }
+  }
+
+  .section-title {
+    @apply tw-mb-11;
+
+    & span {
+      @apply tw-block tw-mb-2 tw-text-pink-500 tw-font-bold tw-text-base tw-tracking-4px tw-uppercase;
+    }
+
+    & h2 {
+      @apply tw-text-gray-900 tw-text-42px tw-leading-snug;
+    }
+  }
+
+  .set-bg {
+    @apply tw-bg-no-repeat tw-bg-center tw-bg-cover;
+  }
+}
