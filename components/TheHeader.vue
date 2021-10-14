@@ -1,5 +1,5 @@
 <template>
-  <header class="py-2">
+  <header class="tw-pb-[66px]">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
       <div class="container">
         <button
