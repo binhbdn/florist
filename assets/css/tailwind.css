@@ -2,6 +2,7 @@
 @tailwind utilities;
 @tailwind variants;
 
+/*
 @layer utilities {
   @variants hover {
     .box-shadow-florist {
@@ -12,10 +13,16 @@
     }
   }
 }
+*/
 
 @layer components {
   .btn-florist {
-    @apply tw-inline-block tw-pt-3.5 tw-pb-3 tw-px-7.5 tw-text-white tw-font-bold tw-text-15px tw-tracking-2px tw-uppercase tw-bg-pink-500 tw-rounded-full box-shadow-florist hover:box-shadow-inset-florist;
+    box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
+    @apply tw-inline-block tw-pt-3.5 tw-pb-3 tw-px-7.5 tw-text-white tw-font-bold tw-text-15px tw-tracking-2px tw-uppercase tw-bg-pink-500 tw-rounded-full;
+
+    &:hover {
+      box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 50%);
+    }
 
     &.btn-outline-florist {
       @apply tw-pt-3 tw-pb-2.5 tw-text-gray-900 tw-bg-transparent tw-border-pink-500 tw-border-solid tw-border-2;
