@@ -55,10 +55,10 @@
 /* --- Start Carousel CSS --- */
 
 .img-carousel-1 {
-  background-image: url('https://binhbdn.github.io/flower-shop/img/carousel-1.d9ada698.jpg');
+  background-image: url('~assets/img/carousel/carousel-1.jpg');
 }
 .img-carousel-2 {
-  background-image: url('https://binhbdn.github.io/flower-shop/img/carousel-2.940d87df.jpg');
+  background-image: url('~assets/img/carousel/carousel-2.jpg');
 }
 .tw-h-\[550px\] + .carousel-caption {
   @apply tw-inset-x-0 !important;
