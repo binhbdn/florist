@@ -24,6 +24,13 @@ export default {
     "dashboard": "Bảng điều khiển",
   },
 
+  "hero": {
+    "title": "Cửa hàng hoa tươi & Quà tặng",
+    "subTitle": "Đẹp nhẹ nhàng đắm say lòng người. | Đẹp tinh khôi tặng người yêu mến.",
+    "href": "/gioi-thieu | /dich-vu",
+    "btnText": "Giới thiệu | Dịch vụ",
+  },
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",

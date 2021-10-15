@@ -24,6 +24,13 @@ export default {
     "dashboard": "Dashboard",
   },
 
+  "hero": {
+    "title": "Fresh Flower & Gift Shop",
+    "subTitle": "Beautiful, gentle, captivating. | Pure beauty for loved ones.",
+    "href": "/gioi-thieu | /dich-vu",
+    "btnText": "About us | Services",
+  },
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",

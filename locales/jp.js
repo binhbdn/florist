@@ -24,6 +24,13 @@ export default {
     "dashboard": "ダッシュボード",
   },
 
+  "hero": {
+    "title": "生花＆ギフトショップ",
+    "subTitle": "美しく、優しく、魅惑的。 | 愛する人のための純粋な美しさ。",
+    "href": "/gioi-thieu | /dich-vu",
+    "btnText": "会社概要 | サービス",
+  },
+
   "footer": {
     "introduce": "ハノイの内陸部にはほぼ完全無料で花をお届けし、他の遠隔地への配送料金もサポートしています。",
     "info": "情報",
