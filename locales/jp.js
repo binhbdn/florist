@@ -24,4 +24,19 @@ export default {
     "dashboard": "ダッシュボード",
   },
 
+  "footer": {
+    "introduce": "ハノイの内陸部にはほぼ完全無料で花をお届けし、他の遠隔地への配送料金もサポートしています。",
+    "info": "情報",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "guide": "案内",
+    "order": "注文",
+    "exchange": "交換",
+    "newletter": "ニュースレター",
+    "newletterInfo": "ニュースレターを購読して、無料のヒントを入手してください。 スパムはありません、約束します。",
+    "email": "Eメール",
+    "subscribe": "申し込む",
+    "getInTouch": "連絡する",
+    "scrollBackToTop": "上にスクロールして戻る",
+  },
 }

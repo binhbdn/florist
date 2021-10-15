@@ -24,4 +24,19 @@ export default {
     "dashboard": "Bảng điều khiển",
   },
 
+  "footer": {
+    "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
+    "info": "Thông tin",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "guide": "Hướng dẫn",
+    "order": "Đặt hàng",
+    "exchange": "Đổi hàng",
+    "newletter": "Bản tin",
+    "newletterInfo": "Đăng ký nhận các bài viết của chúng tôi về các mẹo và thủ thuật cắm hoa, chăm sóc hoa ...",
+    "email": "Email",
+    "subscribe": "Đăng ký",
+    "getInTouch": "Liên hệ",
+    "scrollBackToTop": "Cuộn lên đầu trang",
+  },
 }

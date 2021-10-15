@@ -12,11 +12,7 @@
           </div>
           <div class="col-md-6">
             <div class="footer__top__text">
-              <p class="mb-0">
-                Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội
-                thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa
-                khác.
-              </p>
+              <p class="mb-0">{{ $t('footer.introduce') }}</p>
             </div>
           </div>
           <div class="col-md-3">
@@ -57,54 +53,61 @@
         <div class="row">
           <div class="col-lg-2 col-md-3">
             <div class="footer__widget footer__widget--info">
-              <h4>Thông tin</h4>
+              <h4>{{ $t('footer.info') }}</h4>
               <ul>
                 <li>
-                  <NuxtLink to="/gioi-thieu">Giới thiệu</NuxtLink>
+                  <NuxtLink :to="localePath('/gioi-thieu')">
+                    {{ $t('footer.about') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/dich-vu">Dịch vụ</NuxtLink>
+                  <NuxtLink :to="localePath('/dich-vu')">
+                    {{ $t('nav.service') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/lien-he">Liên hệ</NuxtLink>
+                  <NuxtLink :to="localePath('/lien-he')">
+                    {{ $t('footer.contact') }}
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="footer__widget footer__widget--guide">
-              <h4>Hướng dẫn</h4>
+              <h4>{{ $t('footer.guide') }}</h4>
               <ul>
                 <li>
-                  <NuxtLink to="/huong-dan-mua-hang">Mua hàng</NuxtLink>
+                  <NuxtLink :to="localePath('/huong-dan-dat-hang')">
+                    {{ $t('footer.order') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/huong-dan-doi-hang">Đổi hàng</NuxtLink>
+                  <NuxtLink :to="localePath('/huong-dan-doi-hang')">
+                    {{ $t('footer.exchange') }}
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/huong-dan-thanh-toan"
-                    >Thanh toán</NuxtLink
-                  >
+                  <NuxtLink :to="localePath('/huong-dan-thanh-toan')">
+                    {{ $t('nav.checkout') }}
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="footer__newslatter">
-              <h4>Tin tức</h4>
-              <p>
-                Đăng ký nhận các bài viết của chúng tôi về các mẹo và thủ thuật
-                cắm hoa, chăm sóc hoa ...
-              </p>
+              <h4>{{ $t('footer.newletter') }}</h4>
+              <p>{{ $t('footer.newletterInfo') }}</p>
               <form action="#">
-                <input type="text" placeholder="Email" />
-                <button type="submit">Đăng ký</button>
+                <input type="text" :placeholder="$t('footer.email')" />
+                <button type="submit">{{ $t('footer.subscribe') }}</button>
               </form>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="footer__widget footer__widget--address">
-              <h4>Liên hệ</h4>
+              <h4>{{ $t('footer.getInTouch') }}</h4>
               <ul>
                 <li>
                   <a
@@ -142,7 +145,7 @@
     <button
       id="back-to-top"
       class="text-white p-0 border-0 rounded-circle"
-      title="Lên đầu trang"
+      :title="$t('footer.scrollBackToTop')"
       type="button"
       @click="backToTop"
     >
@@ -159,32 +162,32 @@ export default {
       // entire view has been rendered
 
       // Get the button:
-      const myButton = document.getElementById("back-to-top");
+      const myButton = document.getElementById('back-to-top')
 
       // When the user scrolls down 100px from the top of the document, show the button
       window.onscroll = function () {
-        scrollFunction();
-      };
+        scrollFunction()
+      }
 
       function scrollFunction() {
         if (
           document.documentElement.scrollTop > 100 ||
           document.body.scrollTop > 100
         ) {
-          myButton.style.display = "block";
+          myButton.style.display = 'block'
         } else {
-          myButton.style.display = "none";
+          myButton.style.display = 'none'
         }
       }
-    });
+    })
   },
 
   methods: {
     // When the user clicks on the button, scroll to the top of the document
     backToTop() {
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+      document.body.scrollTop = 0 // For Safari
     },
   },
-};
+}
 </script>
