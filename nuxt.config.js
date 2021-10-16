@@ -46,6 +46,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // https://tailwindcss.nuxtjs.org/
+    '@nuxtjs/tailwindcss',
     // https://github.com/Developmint/nuxt-purgecss#readme
     'nuxt-purgecss',
   ],

@@ -1,5 +1,6 @@
 <template>
   <main>
+    <TheCarousel />
   </main>
 </template>
 
