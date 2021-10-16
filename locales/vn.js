@@ -53,6 +53,33 @@ export default {
     },
   ],
 
+  categoriesItems: [{
+      id: 1,
+      name: "Hoa bó",
+      quantity: 15,
+      link: "/hoa-bo",
+    },
+    {
+      id: 2,
+      name: "Hoa giỏ",
+      quantity: 22,
+      link: "/hoa-gio",
+    },
+    {
+      id: 3,
+      name: "Hoa chúc mừng",
+      quantity: 38,
+      link: "/hoa-chuc-mung",
+    },
+    {
+      id: 4,
+      name: "Hoa chia buồn",
+      quantity: 25,
+      link: "/hoa-chia-buon",
+    },
+  ],
+  "qty": "SL",
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",
