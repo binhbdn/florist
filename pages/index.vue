@@ -1,6 +1,7 @@
 <template>
   <main>
     <TheCarousel />
+    <TheBenefits />
   </main>
 </template>
 

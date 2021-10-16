@@ -31,6 +31,28 @@ export default {
     "btnText": "Giới thiệu | Dịch vụ",
   },
 
+  benefitItems: [{
+      id: 1,
+      title: "Hoa tươi",
+      content: "Đảm bảo chất lượng, cam kết dùng 100% hoa tươi.",
+    },
+    {
+      id: 2,
+      title: "Băng rôn",
+      content: "Chúng tôi miễn phí thiệp, băng rôn kèm theo hoa.",
+    },
+    {
+      id: 3,
+      title: "Vận chuyển",
+      content: "Chúng tôi miễn phí giao hoa nội thành Tp. Hà Nội.",
+    },
+    {
+      id: 4,
+      title: "Chụp hình",
+      content: "Cam kết uy tín, có chụp hình gửi khách xem trước.",
+    },
+  ],
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",

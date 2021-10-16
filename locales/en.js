@@ -31,6 +31,28 @@ export default {
     "btnText": "About us | Services",
   },
 
+  benefitItems: [{
+      id: 1,
+      title: "Fresh flowers",
+      content: "Quality assurance, use 100% fresh flowers.",
+    },
+    {
+      id: 2,
+      title: "Banner",
+      content: "Offer free cards and banners with flowers.",
+    },
+    {
+      id: 3,
+      title: "Shipping",
+      content: "Free to deliver flowers within Hanoi city.",
+    },
+    {
+      id: 4,
+      title: "Take pictures",
+      content: "Send taken photos to customers for preview.",
+    },
+  ],
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",
