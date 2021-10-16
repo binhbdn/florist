@@ -31,6 +31,28 @@ export default {
     "btnText": "会社概要 | サービス",
   },
 
+  benefitItems: [{
+      id: 1,
+      title: "生花",
+      content: "品質保証、100％生花を使用。",
+    },
+    {
+      id: 2,
+      title: "バナー",
+      content: "花と無料のバナーを提供する。",
+    },
+    {
+      id: 3,
+      title: "運送",
+      content: "ハノイ市内で花を無料でお届け。",
+    },
+    {
+      id: 4,
+      title: "写真",
+      content: "プレビュー用に写真を送信する。",
+    },
+  ],
+
   "footer": {
     "introduce": "ハノイの内陸部にはほぼ完全無料で花をお届けし、他の遠隔地への配送料金もサポートしています。",
     "info": "情報",
