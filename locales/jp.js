@@ -53,6 +53,33 @@ export default {
     },
   ],
 
+  categoriesItems: [{
+      id: 1,
+      name: "花束",
+      quantity: 15,
+      link: "/hoa-bo",
+    },
+    {
+      id: 2,
+      name: "花棚",
+      quantity: 22,
+      link: "/hoa-gio",
+    },
+    {
+      id: 3,
+      name: "おめでとう花",
+      quantity: 38,
+      link: "/hoa-chuc-mung",
+    },
+    {
+      id: 4,
+      name: "お悔やみの花",
+      quantity: 25,
+      link: "/hoa-chia-buon",
+    },
+  ],
+  "qty": "量",
+
   "footer": {
     "introduce": "ハノイの内陸部にはほぼ完全無料で花をお届けし、他の遠隔地への配送料金もサポートしています。",
     "info": "情報",

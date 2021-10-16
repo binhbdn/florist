@@ -53,6 +53,33 @@ export default {
     },
   ],
 
+  categoriesItems: [{
+      id: 1,
+      name: "Bouquet",
+      quantity: 15,
+      link: "/hoa-bo",
+    },
+    {
+      id: 2,
+      name: "Flower box",
+      quantity: 22,
+      link: "/hoa-gio",
+    },
+    {
+      id: 3,
+      name: "Congratulations",
+      quantity: 38,
+      link: "/hoa-chuc-mung",
+    },
+    {
+      id: 4,
+      name: "Condolence",
+      quantity: 25,
+      link: "/hoa-chia-buon",
+    },
+  ],
+  "qty": "Q'ty",
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",

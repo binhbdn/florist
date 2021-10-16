@@ -2,6 +2,7 @@
   <main>
     <TheCarousel />
     <TheBenefits />
+    <TheCategories />
   </main>
 </template>
 
