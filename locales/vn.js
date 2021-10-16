@@ -80,6 +80,14 @@ export default {
   ],
   "qty": "SL",
 
+  "about": {
+    "title1": "Chúng tôi cung cấp nhiều loại dịch vụ hoa tươi",
+    "subTitle2": "Sống chậm & ngắm hoa",
+    "title2": "Sống chậm và hít thở cùng đóa hồng",
+    "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi. Non sodales neque sodales ut etiam sit. Diam vulputate ut pharetra sit amet aliquam. Scelerisque purus semper eget duis. Fusce ut placerat orci nulla pellentesque enim.",
+    "content2": "Lorem ipsum dolor sit amet, ultrices dui sapien. Tellus orci ac auctor au auue neque. Maada fames ac pis egestas maeceas conlis posuere. Arcu risus quis vaius qu quis id diam.",
+  },
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",

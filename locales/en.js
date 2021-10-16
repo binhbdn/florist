@@ -80,6 +80,14 @@ export default {
   ],
   "qty": "Q'ty",
 
+  "about": {
+    "title1": "We provide all kinds of fresh flower services",
+    "subTitle2": "Slow Flowers’ Floral Insights",
+    "title2": "Dried flowers are having a renaissance",
+    "content1": "For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada, growing flowers that can be dried and incorporated into late fall and winter floral arrangements has been a game-changer. During her growing season, this farmer-florist relies on a vivid palette of annuals, perennials and ornamental grasses to supply her studio.",
+    "content2": "This awareness has been stimulated by sustainable sourcing practices and the desire on the part of North American flower growers to “extend the season” beyond the last frost.",
+  },
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",
