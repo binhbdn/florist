@@ -3,6 +3,7 @@
     <TheCarousel />
     <TheBenefits />
     <TheCategories />
+    <AppAboutUs />
   </main>
 </template>
 
