@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{362:function(n,t,e){"use strict";e.r(t);var c={nuxtI18n:{paths:{vn:"/san-pham",en:"/product",ja:"/product"}}},r=e(3),component=Object(r.a)(c,(function(){var n=this.$createElement;return(this._self._c||n)("main")}),[],!1,null,null,null);t.default=component.exports}}]);
