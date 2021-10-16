@@ -24,7 +24,10 @@
         class="carousel-item"
         data-bs-interval="4000"
       >
-        <div :class="`img-carousel-${index}`" class="set-bg tw-h-[550px]"></div>
+        <div
+          :style="{ backgroundImage: 'url(' + require(`~/assets/img/carousel/carousel-${index}.jpg`) + ')' }"
+          class="set-bg tw-h-[550px]"
+        ></div>
 
         <div class="carousel-caption">
           <div class="container">
@@ -54,12 +57,6 @@
 <style lang="postcss">
 /* --- Start Carousel CSS --- */
 
-.img-carousel-1 {
-  background-image: url('~assets/img/carousel/carousel-1.jpg');
-}
-.img-carousel-2 {
-  background-image: url('~assets/img/carousel/carousel-2.jpg');
-}
 .tw-h-\[550px\] + .carousel-caption {
   @apply tw-inset-x-0 !important;
   @apply tw-pb-12;
