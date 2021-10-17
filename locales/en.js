@@ -115,6 +115,28 @@ export default {
     "scrollBackToTop": "Scroll back to top",
   },
 
+  "service": {
+    "subTitle": "Our services",
+    "title": "Florist’s services",
+  },
+
+  serviceItems: [{
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-1.png",
+      title: "Custom orders",
+      content: "Designing and providing flower patterns according to the diverse needs of customers: congratulatory flowers, romantic love flowers…"
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-2.png",
+      title: "Event decoration",
+      content: "Event flower design service is an indispensable part, helping events from simple to luxurious take place successfully."
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-3.png",
+      title: "Green landscape",
+      content: "Florist Shop provides care services at a reasonable cost so that your garden landscape is always as green and as neat as the first days."
+    },
+  ],
+
   "ourTeam": {
     "subTitle": "Our Team Member",
     "title": "Flower Experts",

@@ -115,6 +115,28 @@ export default {
     "scrollBackToTop": "上にスクロールして戻る",
   },
 
+  "service": {
+    "subTitle": "私たちのサービス",
+    "title": "Florist’s サービス",
+  },
+
+  serviceItems: [{
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-1.png",
+      title: "カスタムオーダー",
+      content: "花屋は、お祝いの花、ロマンチックな愛の花など、お客様の多様なニーズに応じた花柄のデザインと提供を専門としています。…"
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-2.png",
+      title: "イベントデコレーション",
+      content: "イベントフラワーデザインサービスは、シンプルなものから豪華なものまで、イベントを成功させるために欠かせないサービスです。"
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-3.png",
+      title: "緑の風景",
+      content: "花屋はリーズナブルなコストでケアサービスを提供しているので、あなたの庭の風景は常に最初の日と同じくらい緑できれいです。"
+    },
+  ],
+
   "ourTeam": {
     "subTitle": "私たちのチームメンバー",
     "title": "花の専門家",

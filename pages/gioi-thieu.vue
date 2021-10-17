@@ -8,6 +8,7 @@
       <template #endpoint>{{ $t('nav.about') }}</template>
     </AppBreadcrumb>
     <AppAboutUs />
+    <TheServices />
     <AppTestimonial />
     <TheTeam />
   </main>

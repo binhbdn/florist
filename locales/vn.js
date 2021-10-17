@@ -115,6 +115,28 @@ export default {
     "scrollBackToTop": "Cuộn lên đầu trang",
   },
 
+  "service": {
+    "subTitle": "Dịch vụ",
+    "title": "Dịch vụ shop Florist",
+  },
+
+  serviceItems: [{
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-1.png",
+      title: "Hoa theo yêu cầu",
+      content: "Florist Shop chuyên thiết kế và cung cấp các mẫu hoa theo nhu cầu đa dạng của khách hàng: hoa tươi chúc mừng, hoa tình yêu lãng mạn…"
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-2.png",
+      title: "Hoa cho sự kiện",
+      content: "Dịch vụ thiết kế cung cấp hoa tươi sự kiện là một phần không thể thiếu, giúp các sự kiện từ đơn giản đến sang trọng diễn ra thành công."
+    },
+    {
+      imgUrl: "https://binhbdn.github.io/flower-shop/img/services/services-3.png",
+      title: "Chăm sóc cảnh quan",
+      content: "Florist Shop có cung cấp dịch vụ chăm sóc với chi phí hợp lý để cảnh quan sân vườn nhà bạn luôn xanh tốt, chỉn chu như những ngày đầu."
+    },
+  ],
+
   "ourTeam": {
     "subTitle": "Nhóm Chúng Tôi",
     "title": "Chuyên Gia Về Hoa",
