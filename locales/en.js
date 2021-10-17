@@ -88,6 +88,11 @@ export default {
     "content2": "This awareness has been stimulated by sustainable sourcing practices and the desire on the part of North American flower growers to “extend the season” beyond the last frost.",
   },
 
+  "customFlower": {
+    "title": "Custom designed flowers",
+    "content": "Flowers for you to say love.",
+  },
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",
