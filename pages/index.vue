@@ -6,6 +6,7 @@
     <AppAboutUs />
     <TheCustomFlower />
     <TheLatestPosts />
+    <AppTestimonial />
   </main>
 </template>
 
