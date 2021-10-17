@@ -4,6 +4,7 @@
     <TheBenefits />
     <TheCategories />
     <AppAboutUs />
+    <TheCustomFlower />
   </main>
 </template>
 

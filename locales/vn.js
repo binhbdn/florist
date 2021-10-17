@@ -88,6 +88,11 @@ export default {
     "content2": "Lorem ipsum dolor sit amet, ultrices dui sapien. Tellus orci ac auctor au auue neque. Maada fames ac pis egestas maeceas conlis posuere. Arcu risus quis vaius qu quis id diam.",
   },
 
+  "customFlower": {
+    "title": "Hoa thiết kế theo yêu cầu",
+    "content": "Hoa thay bạn nói lời yêu thương.",
+  },
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",
