@@ -1,5 +1,5 @@
 <template>
-  <header class="py-2">
+  <header class="tw-pb-[66px]">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom">
       <div class="container">
         <button
@@ -80,7 +80,7 @@
             <span
               id="dropdownUser"
               :class="[isLoggedIn ? 'sign-in-icon' : 'sign-out-icon']"
-              class="nav-link dropdown-toggle d-block"
+              class="nav-link dropdown-toggle d-block px-2"
               data-bs-toggle="dropdown"
               data-bs-auto-close="true"
               aria-expanded="false"
@@ -137,7 +137,7 @@
           <div class="dropdown text-end">
             <span
               id="dropdownLang"
-              class="nav-link dropdown-toggle d-block"
+              class="nav-link dropdown-toggle d-block ps-2 pe-0"
               data-bs-toggle="dropdown"
               data-bs-auto-close="true"
               aria-expanded="false"
@@ -302,3 +302,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.dropdown-menu.dropdown-menu-end {
+  @apply tw-left-auto tw-right-0 !important;
+}
+</style>

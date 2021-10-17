@@ -2,7 +2,6 @@
 [Table of contents]
 GENERAL
 * Reset
-* Helper
 * Header
 * Instagram
 * Footer
@@ -88,61 +87,6 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-}
-
-/* --- Helper --- */
-.btn-florist {
-  display: inline-block;
-  padding: 14px 30px 12px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: #f45d96;
-  border-radius: 50px;
-  box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 50%);
-
-  &:hover {
-    box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 50%);
-  }
-
-  &.btn-outline-florist {
-    color: #fff;
-    background: transparent;
-    border: 2px solid #f45d96;
-  }
-}
-
-.section-title {
-  margin-bottom: 45px;
-
-  span {
-    display: block;
-    margin-bottom: 8px;
-    color: #f45d96;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    color: #111;
-    font-size: 42px;
-    line-height: 1.4;
-  }
-}
-
-.set-bg {
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-
-.spad {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 /* --- Header --- */
@@ -234,7 +178,6 @@ ol {
 
     .nav-link,
     .dropdown-item {
-
       &.nuxt-link-exact-active,
       &:hover {
         color: #f45d96;

@@ -1,5 +1,10 @@
 <template>
   <main>
+    <TheCarousel />
+    <TheBenefits />
+    <TheCategories />
+    <AppAboutUs />
+    <TheCustomFlower />
   </main>
 </template>
 
