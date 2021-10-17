@@ -1,5 +1,14 @@
 <template>
   <main>
+    <AppBreadcrumb>
+      {{ $t('footer.about') }}
+      <template #links>
+        <NuxtLink :to="localePath('/')">{{ $t('nav.home') }}</NuxtLink>
+      </template>
+      <template #endpoint>{{ $t('nav.about') }}</template>
+    </AppBreadcrumb>
+    <AppAboutUs />
+    <AppTestimonial />
   </main>
 </template>
 
