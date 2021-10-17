@@ -46,6 +46,7 @@
     }
   }
 }
+
 .categories-item-text {
   width: calc(100% - 30px);
   background-color: rgba(255, 255, 255, 0.75);

@@ -61,15 +61,19 @@
   @apply tw-inset-x-0 !important;
   @apply tw-pb-12;
 }
+
 .carousel-text span {
   @apply tw-relative tw-block tw-mb-3 tw-text-gray-900 tw-font-bold tw-tracking-2px tw-uppercase tw-opacity-0 tw-transition-all tw-duration-500;
 }
+
 .carousel-text h2 {
   @apply tw-relative tw-mb-7 tw-text-gray-900 tw-text-42px tw-leading-snug tw-opacity-0 tw-transition-all tw-duration-700;
 }
+
 .carousel-text .btn-florist {
   @apply tw-relative tw-opacity-0 tw-transition-all tw-duration-1000;
 }
+
 .carousel-item.active .carousel-text {
   & span,
   & h2,
