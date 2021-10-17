@@ -143,4 +143,11 @@ export default {
     "btnText": "私たちのチームに会う",
   },
 
+  "contact": {
+    "topTitle": "お問い合わせ",
+    "content": "花屋さんにご連絡ください。熱心にアドバイスさせていただきます。",
+    "formTitle": "メッセージを送る",
+    "placeholder": "コンテンツ",
+    "btnText": "今すぐ送信」",
+  },
 }

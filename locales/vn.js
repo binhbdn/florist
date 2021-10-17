@@ -143,4 +143,11 @@ export default {
     "btnText": "Kết nối chuyên gia",
   },
 
+  "contact": {
+    "topTitle": "Liên hệ với chúng tôi",
+    "content": "Hãy kết nối với Florist shop, chúng tôi sẽ nhiệt tình tư vấn.",
+    "formTitle": "Gửi tin tư vấn",
+    "placeholder": "Nội dung cần tư vấn",
+    "btnText": "Gửi ngay",
+  },
 }
