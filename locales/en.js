@@ -143,4 +143,11 @@ export default {
     "btnText": "Meet our team",
   },
 
+  "contact": {
+    "topTitle": "Contact us for consultation",
+    "content": "Please connect with Florist shop, we will enthusiastically advise.",
+    "formTitle": "Send message",
+    "placeholder": "Content...",
+    "btnText": "Send now",
+  },
 }
