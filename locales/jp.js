@@ -150,4 +150,8 @@ export default {
     "placeholder": "コンテンツ",
     "btnText": "今すぐ送信」",
   },
+
+  "register": {
+    "account": "マイアカウント",
+  },
 }

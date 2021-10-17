@@ -150,4 +150,8 @@ export default {
     "placeholder": "Nội dung cần tư vấn",
     "btnText": "Gửi ngay",
   },
+
+  "register": {
+    "account": "Tài khoản",
+  },
 }
