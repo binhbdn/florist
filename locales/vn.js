@@ -114,4 +114,11 @@ export default {
     "getInTouch": "Liên hệ",
     "scrollBackToTop": "Cuộn lên đầu trang",
   },
+
+  "ourTeam": {
+    "subTitle": "Nhóm Chúng Tôi",
+    "title": "Chuyên Gia Về Hoa",
+    "btnText": "Kết nối chuyên gia",
+  },
+
 }
