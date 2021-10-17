@@ -27,8 +27,9 @@
 }
 
 .breadcrumb__text h2 {
+  padding-bottom: 10px;
   color: #111827;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 50px;
 }
 
