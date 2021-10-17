@@ -150,4 +150,8 @@ export default {
     "placeholder": "Content...",
     "btnText": "Send now",
   },
+
+  "register": {
+    "account": "My account",
+  },
 }
