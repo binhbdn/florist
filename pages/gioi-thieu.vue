@@ -23,5 +23,11 @@ export default {
       ja: '/about-us',
     },
   },
+
+  head() {
+    return {
+      title: `Florist | ${this.$t('nav.about')}`,
+    }
+  },
 }
 </script>
