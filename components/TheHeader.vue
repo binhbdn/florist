@@ -302,3 +302,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss">
+.dropdown-menu.dropdown-menu-end {
+  @apply tw-left-auto tw-right-0 !important;
+}
+</style>
