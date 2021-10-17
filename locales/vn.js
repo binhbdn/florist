@@ -93,6 +93,12 @@ export default {
     "content": "Hoa thay bạn nói lời yêu thương.",
   },
 
+  "latestPosts": {
+    "subTitle": "Bài viết mới đăng",
+    "title": "Các blog chúng tôi chia sẻ",
+    "btnText": "Xem tất cả blog",
+  },
+
   "footer": {
     "introduce": "Chúng tôi giao hoa gần như hoàn toàn Miễn Phí đến các Quận nội thành Hà Nội và có hỗ trợ phí giao hàng tới các địa điểm xa khác.",
     "info": "Thông tin",
