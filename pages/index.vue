@@ -5,6 +5,7 @@
     <TheCategories />
     <AppAboutUs />
     <TheCustomFlower />
+    <TheLatestPosts />
   </main>
 </template>
 

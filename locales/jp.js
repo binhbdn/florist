@@ -93,6 +93,12 @@ export default {
     "content": "あなたが愛を言うための花。",
   },
 
+  "latestPosts": {
+    "subTitle": "最新の投稿",
+    "title": "花屋のトリック",
+    "btnText": "すべての投稿",
+  },
+
   "footer": {
     "introduce": "ハノイの内陸部にはほぼ完全無料で花をお届けし、他の遠隔地への配送料金もサポートしています。",
     "info": "情報",

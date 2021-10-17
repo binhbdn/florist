@@ -93,6 +93,12 @@ export default {
     "content": "Flowers for you to say love.",
   },
 
+  "latestPosts": {
+    "subTitle": "Latest posts",
+    "title": "Florist tricks",
+    "btnText": "View all posts",
+  },
+
   "footer": {
     "introduce": "We deliver flowers almost completely Free to the inner districts of Hanoi and support delivery fees to other remote locations.",
     "info": "Information",

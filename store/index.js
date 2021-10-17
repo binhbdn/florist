@@ -10,3 +10,10 @@ export const mutations = {
   },
 
 }
+
+export const actions = {
+  async getLatestPostsItems() {
+    // JSON file name: latest-posts-items
+    return await this.$axios.$get('/614f4bd89548541c29b84aee/latest');
+  },
+}
