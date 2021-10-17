@@ -114,4 +114,11 @@ export default {
     "getInTouch": "連絡する",
     "scrollBackToTop": "上にスクロールして戻る",
   },
+
+  "ourTeam": {
+    "subTitle": "私たちのチームメンバー",
+    "title": "花の専門家",
+    "btnText": "私たちのチームに会う",
+  },
+
 }

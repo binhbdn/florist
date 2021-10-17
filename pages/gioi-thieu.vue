@@ -9,6 +9,7 @@
     </AppBreadcrumb>
     <AppAboutUs />
     <AppTestimonial />
+    <TheTeam />
   </main>
 </template>
 

@@ -114,4 +114,11 @@ export default {
     "getInTouch": "Get in touch",
     "scrollBackToTop": "Scroll back to top",
   },
+
+  "ourTeam": {
+    "subTitle": "Our Team Member",
+    "title": "Flower Experts",
+    "btnText": "Meet our team",
+  },
+
 }
