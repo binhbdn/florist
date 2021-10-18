@@ -3,11 +3,11 @@
     <div class="container">
       <div class="register-box">
         <div class="sec-title text-center">
-          <h2 class="title">Tạo tài khoản mới</h2>
+          <h2 class="title">{{ $t('account.createNewAccount') }}</h2>
         </div>
         <div class="styled-form">
           <div id="form-messages"></div>
-          <form id="contact-form">
+          <form id="contact-form" novalidate>
             <div class="row clearfix">
               <div class="form-group col-lg-12 mb-3">
                 <input
@@ -15,8 +15,11 @@
                   type="text"
                   name="fname"
                   required="required"
+                  @focus="$event.target.select()"
                 />
-                <span class="placeholder"> Tên <span></span></span>
+                <span class="placeholder">
+                  {{ $t('account.fName') }} <span></span>
+                </span>
               </div>
               <div class="form-group col-lg-12 mb-3">
                 <input
@@ -24,8 +27,11 @@
                   type="text"
                   name="lname"
                   required="required"
+                  @focus="$event.target.select()"
                 />
-                <span class="placeholder"> Họ <span></span></span>
+                <span class="placeholder">
+                  {{ $t('account.lName') }} <span></span>
+                </span>
               </div>
               <div class="form-group col-lg-12 mb-3">
                 <input
@@ -33,8 +39,11 @@
                   type="email"
                   name="email"
                   required="required"
+                  @focus="$event.target.select()"
                 />
-                <span class="placeholder"> Địa chỉ email <span></span></span>
+                <span class="placeholder">
+                  {{ $t('account.emailAddress') }} <span></span>
+                </span>
               </div>
               <div class="form-group col-lg-12 mb-3">
                 <input
@@ -42,18 +51,24 @@
                   type="text"
                   name="username"
                   required="required"
+                  @focus="$event.target.select()"
                 />
-                <span class="placeholder"> Tên tài khoản <span></span></span>
+                <span class="placeholder">
+                  {{ $t('account.userName') }} <span></span>
+                </span>
               </div>
-              <div class="form-group col-lg-12 mb-3" :title="passwordTitle">
+              <div class="form-group col-lg-12 mb-3">
                 <input
                   id="password"
                   v-model="password"
                   type="password"
                   name="password"
                   required="required"
+                  @focus="$event.target.select()"
                 />
-                <span class="placeholder"> Mật khẩu <span></span></span>
+                <span class="placeholder">
+                  {{ $t('account.password') }} <span></span>
+                </span>
               </div>
               <div class="form-group col-lg-12 mb-4">
                 <input
@@ -61,10 +76,11 @@
                   type="password"
                   name="confirm_password"
                   required="required"
+                  @focus="$event.target.select()"
                 />
                 <span class="placeholder">
-                  Xác nhận Mật khẩu <span></span
-                ></span>
+                  {{ $t('account.confirmPassword') }} <span></span>
+                </span>
               </div>
               <div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
                 <button
@@ -72,13 +88,15 @@
                   class="btn-florist border-0 mb-3"
                   @click="registerFormSubmit"
                 >
-                  Đăng ký
+                  {{ $t('nav.register') }}
                 </button>
               </div>
               <div class="form-group col-lg-12 col-md-12 col-sm-12">
                 <div class="users">
-                  Bạn đã có một tài khoản?
-                  <router-link to="/dang-nhap">Đăng nhập</router-link>
+                  {{ $t('account.alreadyHaveAccount') }}
+                  <NuxtLink :to="localePath('/dang-nhap')">
+                    {{ $t('nav.signIn') }}
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -94,13 +112,7 @@ export default {
   data() {
     return {
       password: '',
-      passwordTitle: '',
     }
-  },
-
-  created() {
-    this.passwordTitle =
-      'không được chứa các ký tự: " ' + " ' ? & / < > hoặc khoảng trắng"
   },
 
   methods: {
@@ -121,6 +133,7 @@ export default {
   },
 }
 </script>
+
 <style lang="scss">
 .register-section {
   position: relative;
@@ -198,14 +211,6 @@ export default {
     display: none;
   }
 
-  input#fname:hover + .placeholder span::after {
-    content: '(*) = không được bỏ trống';
-  }
-
-  input#password:hover + .placeholder span::after {
-    content: '(*) >= 8 ký tự, 1 ký tự in thường, 1 số';
-  }
-
   .placeholder {
     position: absolute;
     top: 12px;
@@ -220,6 +225,42 @@ export default {
   .placeholder span::after {
     color: red;
     content: '(*)';
+  }
+}
+
+html[lang='vi'] {
+  .register-section {
+    input#fname:hover + .placeholder span::after {
+      content: '(*) = không được bỏ trống';
+    }
+
+    input#password:hover + .placeholder span::after {
+      content: '(*) ≥8 ký tự, ≥1 in hoa, ≥1 số';
+    }
+  }
+}
+
+html[lang='en'] {
+  .register-section {
+    input#fname:hover + .placeholder span::after {
+      content: '(*) = not be empty';
+    }
+
+    input#password:hover + .placeholder span::after {
+      content: '(*) ≥8 characters, ≥1 uppercase, ≥1 number';
+    }
+  }
+}
+
+html[lang='ja'] {
+  .register-section {
+    input#fname:hover + .placeholder span::after {
+      content: '(*) = 空ではない';
+    }
+
+    input#password:hover + .placeholder span::after {
+      content: '(*) ≥8 文字, ≥1 大文字, ≥1 数字';
+    }
   }
 }
 </style>

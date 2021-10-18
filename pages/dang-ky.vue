@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppBreadcrumb>
-      {{ $t('register.account') }}
+      {{ $t('account.myAccount') }}
       <template #links>
         <NuxtLink :to="localePath('/')">{{ $t('nav.home') }}</NuxtLink>
       </template>
