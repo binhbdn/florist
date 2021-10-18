@@ -143,6 +143,10 @@ export default {
     "btnText": "Kết nối chuyên gia",
   },
 
+  "product": {
+    "topTitle": "Cửa hàng",
+  },
+
   "contact": {
     "topTitle": "Liên hệ với chúng tôi",
     "content": "Hãy kết nối với Florist shop, chúng tôi sẽ nhiệt tình tư vấn.",

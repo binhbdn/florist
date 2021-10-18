@@ -6,6 +6,7 @@ export const state = () => ({
   filterSet: null,
   newProductItems: null,
   oldProductItems: null,
+  allProductItems: null,
 })
 
 export const mutations = {
@@ -52,12 +53,29 @@ export const mutations = {
     state.newProductItems[indexOfItem].quantityInCart = newValue
   },
 
-  toggleFavoriteInCartInNewProductItems(state, indexOfItem) {
+  updateQuantityInCartInAllProductItems(state, {
+    id,
+    newValue
+  }) {
+    const item = state.allProductItems.find(item => item.productId === id);
+    item.quantityInCart = newValue
+  },
+
+  toggleFavoriteInNewProductItems(state, indexOfItem) {
     state.newProductItems[indexOfItem].isFavorited = !state.newProductItems[indexOfItem].isFavorited
+  },
+
+  toggleFavoriteInAllProductItems(state, id) {
+    const item = state.allProductItems.find(item => item.productId === id);
+    item.isFavorited = !item.isFavorited
   },
 
   updateOldProductItems(state, value) {
     state.oldProductItems = value
+  },
+
+  updateAllProductItems(state, value) {
+    state.allProductItems = value
   },
 }
 
@@ -77,5 +95,28 @@ export const actions = {
         commit('updateNewProductItems', res.record.newArrivalsItems)
       })
       .catch((error) => console.log(error)); // eslint-disable-line no-console
+  },
+
+  async getOldProductItems({
+    commit
+  }) {
+    // JSON file name: old-product-items
+    await this.$axios.$get('/6151c6814a82881d6c5667dc/latest')
+      .then((res) => {
+        commit('updateOldProductItems', res.record)
+      })
+      .catch((error) => console.log(error)); // eslint-disable-line no-console
+  },
+
+  async getAllProductItems({
+    dispatch,
+    commit,
+    state,
+  }) {
+    if (state.newProductItems === null) {
+      await dispatch('getFilterSetAndNewProductItems')
+    }
+    await dispatch('getOldProductItems')
+    commit('updateAllProductItems', state.newProductItems.concat(state.oldProductItems))
   },
 }
