@@ -99,7 +99,10 @@
                         "
                         @click="favoriteToggle(item, index)"
                       >
-                        <IconHeartFill v-if="item.isFavorited" class="tw-text-pink-500 group-hover:tw-text-white"/>
+                        <IconHeartFill
+                          v-if="item.isFavorited"
+                          class="tw-text-pink-500 group-hover:tw-text-white"
+                        />
                         <IconHeart v-else />
                       </span>
                     </button>
@@ -147,9 +150,9 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="view__all">
-            <router-link to="/san-pham" class="btn-florist"
-              >Xem tất cả sản phẩm</router-link
-            >
+            <NuxtLink :to="localePath('/san-pham')" class="btn-florist">
+              {{ $t('nav.showAllProducts') }}
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -203,6 +206,7 @@ export default {
       },
     }
   },
+
   computed: {
     filterSet() {
       return this.$store.state.filterSet
@@ -258,7 +262,7 @@ export default {
       } else {
         this.$store.commit('increaseFavoriteProductsCount')
       }
-        this.$store.commit('toggleFavoriteInCartInNewProductItems',index)
+      this.$store.commit('toggleFavoriteInNewProductItems', index)
     },
   },
 }

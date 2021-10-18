@@ -143,6 +143,10 @@ export default {
     "btnText": "Meet our team",
   },
 
+  "product": {
+    "topTitle": "Shop",
+  },
+
   "contact": {
     "topTitle": "Contact us for consultation",
     "content": "Please connect with Florist shop, we will enthusiastically advise.",

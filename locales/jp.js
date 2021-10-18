@@ -143,6 +143,10 @@ export default {
     "btnText": "私たちのチームに会う",
   },
 
+  "product": {
+    "topTitle": "店",
+  },
+
   "contact": {
     "topTitle": "お問い合わせ",
     "content": "花屋さんにご連絡ください。熱心にアドバイスさせていただきます。",
