@@ -161,5 +161,11 @@ export default {
     "password": "Mật khẩu",
     "confirmPassword": "Xác nhận mật khẩu",
     "alreadyHaveAccount": "Bạn đã có một tài khoản?",
+    "haveNotRegisteredYet": "Bạn chưa đăng ký?",
   },
+
+  "alert": {
+    "logInFail": "Đăng nhập không thành công. Sai tên tài khoản và/ hoặc mật khẩu",
+    "noEmptyUsernamePassword": "Tên tài khoản và mật khẩu không được để trống",
+  }
 }

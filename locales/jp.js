@@ -161,5 +161,11 @@ export default {
     "password": "パスワード",
     "confirmPassword": "パスワードを認証する",
     "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+    "haveNotRegisteredYet": "まだ登録していませんか？",
   },
+
+  "alert": {
+    "logInFail": "ログインに失敗しました。 間違ったユーザー名および/またはパスワード",
+    "noEmptyUsernamePassword": "ユーザー名とパスワードを空白にすることはできません",
+  }
 }

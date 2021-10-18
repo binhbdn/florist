@@ -161,5 +161,11 @@ export default {
     "password": "Password",
     "confirmPassword": "Confirm password",
     "alreadyHaveAccount": "Already have an account?",
+    "haveNotRegisteredYet": "Haven't registered yet?",
   },
+
+  "alert": {
+    "logInFail": "Login unsuccessful. Wrong username and/or password",
+    "noEmptyUsernamePassword": "Username and password cannot be blank",
+  }
 }
