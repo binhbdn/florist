@@ -151,7 +151,15 @@ export default {
     "btnText": "今すぐ送信」",
   },
 
-  "register": {
-    "account": "マイアカウント",
+  "account": {
+    "myAccount": "マイアカウント",
+    "createNewAccount": "新しいアカウントを作成する",
+    "fName": "名前",
+    "lName": "苗字",
+    "emailAddress": "電子メールアドレス",
+    "userName": "ユーザー名",
+    "password": "パスワード",
+    "confirmPassword": "パスワードを認証する",
+    "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
   },
 }

@@ -151,7 +151,15 @@ export default {
     "btnText": "Gửi ngay",
   },
 
-  "register": {
-    "account": "Tài khoản",
+  "account": {
+    "myAccount": "Tài khoản của tôi",
+    "createNewAccount": "Tạo tài khoản mới",
+    "fName": "Tên",
+    "lName": "Họ",
+    "emailAddress": "Địa chỉ email",
+    "userName": "Tên tài khoản",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "alreadyHaveAccount": "Bạn đã có một tài khoản?",
   },
 }

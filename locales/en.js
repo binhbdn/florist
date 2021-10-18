@@ -151,7 +151,15 @@ export default {
     "btnText": "Send now",
   },
 
-  "register": {
-    "account": "My account",
+  "account": {
+    "myAccount": "My account",
+    "createNewAccount": "Create new account",
+    "fName": "First name",
+    "lName": "Last name",
+    "emailAddress": "Email address",
+    "userName": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "alreadyHaveAccount": "Already have an account?",
   },
 }
