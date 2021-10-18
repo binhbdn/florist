@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <AppBreadcrumb>
       {{ $t('service.subTitle') }}
       <template #links>
@@ -28,7 +28,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>

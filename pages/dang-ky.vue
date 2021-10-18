@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <AppBreadcrumb>
       {{ $t('account.myAccount') }}
       <template #links>
@@ -8,7 +8,7 @@
       <template #endpoint>{{ $t('nav.register') }}</template>
     </AppBreadcrumb>
     <TheRegister />
-  </div>
+  </main>
 </template>
 
 <script>
