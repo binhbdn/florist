@@ -171,5 +171,10 @@ export default {
   "alert": {
     "logInFail": "ログインに失敗しました。 間違ったユーザー名および/またはパスワード",
     "noEmptyUsernamePassword": "ユーザー名とパスワードを空白にすることはできません",
-  }
+  },
+
+  "cart": {
+    "topTitle": "ショッピングカート",
+    "title": "カート",
+  },
 }
