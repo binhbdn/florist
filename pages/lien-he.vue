@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <AppBreadcrumb>
       {{ $t('contact.topTitle') }}
       <template #links>
@@ -8,7 +8,7 @@
       <template #endpoint>{{ $t('nav.contact') }}</template>
     </AppBreadcrumb>
     <TheContact />
-  </div>
+  </main>
 </template>
 
 <script>
