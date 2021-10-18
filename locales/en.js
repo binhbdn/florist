@@ -171,5 +171,10 @@ export default {
   "alert": {
     "logInFail": "Login unsuccessful. Wrong username and/or password",
     "noEmptyUsernamePassword": "Username and password cannot be blank",
-  }
+  },
+
+  "cart": {
+    "topTitle": "Shopping cart",
+    "title": "Cart",
+  },
 }

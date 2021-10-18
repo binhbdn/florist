@@ -22,6 +22,10 @@ export const mutations = {
     state.selectedProductsCount--
   },
 
+  removeFromSelectedProductsCount(state, value) {
+    state.selectedProductsCount -= value
+  },
+
   increaseFavoriteProductsCount(state) {
     state.favoriteProductsCount++
   },
