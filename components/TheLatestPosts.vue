@@ -41,7 +41,7 @@
                 {{ item.content }}
               </p>
               <p class="text-end">
-                <BaseIconCalendar />{{ item.postDate }} <BaseIconAuthor />{{
+                <IconCalendar />{{ item.postDate }} <IconAuthor />{{
                   item.author
                 }}
               </p>
