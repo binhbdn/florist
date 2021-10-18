@@ -4,6 +4,7 @@
     <TheBenefits />
     <TheCategories />
     <AppAboutUs />
+    <TheNewArrivals />
     <TheCustomFlower />
     <TheLatestPosts />
     <AppTestimonial />
