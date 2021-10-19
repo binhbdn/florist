@@ -1,5 +1,6 @@
 <template>
   <div>
+    <TheProductPreviewModal />
     <TheHeader />
     <Nuxt />
     <TheInstagram />

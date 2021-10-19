@@ -47,7 +47,7 @@
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#productPreviewModal"
-                      @click="quickViewProductId = item.productId"
+                      @click="quickViewProductItem = item"
                     >
                       <span
                         data-bs-toggle="tooltip"
@@ -115,7 +115,7 @@
                   type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#productPreviewModal"
-                  @click="quickViewProductId = item.productId"
+                  @click="quickViewProductItem = item"
                 >
                   <span
                     data-bs-toggle="tooltip"
@@ -157,40 +157,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Product Preview Modal -->
-    <div
-      id="productPreviewModal"
-      class="modal fade"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">{{ quickViewProductId }}</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 
@@ -199,7 +165,6 @@ export default {
   data() {
     return {
       selectedFilterId: 0,
-      quickViewProductId: -1,
       payload: {
         indexOfItem: null,
         newValue: null,
@@ -214,6 +179,15 @@ export default {
 
     newArrivalsItems() {
       return this.$store.state.newProductItems
+    },
+
+    quickViewProductItem: {
+      get() {
+        return this.$store.state.quickViewProductItem
+      },
+      set(value) {
+        this.$store.commit('updateQuickViewProductItem', value)
+      },
     },
   },
 

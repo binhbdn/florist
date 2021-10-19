@@ -78,7 +78,7 @@
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#productPreviewModal"
-                      @click="quickViewProductId = item.productId"
+                      @click="quickViewProductItem = item"
                     >
                       <span
                         data-bs-toggle="tooltip"
@@ -146,7 +146,7 @@
                   type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#productPreviewModal"
-                  @click="quickViewProductId = item.productId"
+                  @click="quickViewProductItem = item"
                 >
                   <span
                     data-bs-toggle="tooltip"
@@ -196,7 +196,6 @@ export default {
   name: 'TheProducts',
   data() {
     return {
-      quickViewProductId: -1,
       isCheckedAll: true,
       sortBy: 0,
       filterSet: null,
@@ -251,6 +250,15 @@ export default {
       }
 
       return count
+    },
+
+    quickViewProductItem: {
+      get() {
+        return this.$store.state.quickViewProductItem
+      },
+      set(value) {
+        this.$store.commit('updateQuickViewProductItem', value)
+      },
     },
   },
 

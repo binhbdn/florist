@@ -7,6 +7,7 @@ export const state = () => ({
   newProductItems: null,
   oldProductItems: null,
   allProductItems: null,
+  quickViewProductItem: null,
 })
 
 export const mutations = {
@@ -80,6 +81,10 @@ export const mutations = {
 
   updateAllProductItems(state, value) {
     state.allProductItems = value
+  },
+
+  updateQuickViewProductItem(state, value) {
+    state.quickViewProductItem = value
   },
 }
 
