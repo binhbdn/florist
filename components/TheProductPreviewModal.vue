@@ -72,3 +72,9 @@ export default {
   },
 }
 </script>
+
+<style>
+#productPreviewModal .table tbody tr:last-child {
+  display: none;
+}
+</style>
