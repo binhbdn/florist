@@ -50,7 +50,7 @@
     "fibers": "^5.0.0",
     "husky": "^7.0.2",
     "jest": "^27.3.1",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^12.1.7",
     "nuxt-purgecss": "^1.0.0",
     "postcss": "^8.3.9",
     "prettier": "^2.3.2",
